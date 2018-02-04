@@ -40,7 +40,8 @@ def gitShortHash() {
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    buildToolsVersion '26.0.2'
+    flavorDimensions "default"
 
     defaultConfig {
         minSdkVersion 16
@@ -61,7 +62,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             shrinkResources true
         }
     }
