@@ -91,7 +91,7 @@ class MPDApplicationBase extends Application implements
     /**
      * Detect and log all found faults.
      */
-    static {
+    static void turnOnStrictMode() {
         final StrictMode.ThreadPolicy policy =
                 new StrictMode.ThreadPolicy.Builder().detectAll().build();
         StrictMode.setThreadPolicy(policy);
@@ -382,6 +382,7 @@ class MPDApplicationBase extends Application implements
     @Override
     public void onCreate() {
         super.onCreate();
+        turnOnStrictMode();
         debug("onCreate Application");
 
         mSettings = PreferenceManager.getDefaultSharedPreferences(this);
