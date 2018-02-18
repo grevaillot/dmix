@@ -99,6 +99,6 @@
         android:contentDescription="@string/menuButton"
         android:paddingLeft="2dip"
         android:paddingRight="16dip"
-        android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha" />
+        android:src="@drawable/abc_ic_menu_overflow_material" />
 
 </RelativeLayout>
