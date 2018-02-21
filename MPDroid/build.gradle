@@ -35,7 +35,7 @@ repositories {
     google()
 }
 
-def gitShortHash() {
+static def gitShortHash() {
     return "git rev-parse --short HEAD".execute().text.trim()
 }
 
