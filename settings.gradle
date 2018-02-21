@@ -14,9 +14,8 @@
  * limitations under the License.
  */
 
-
-
-include "MPDroid", ':JMPDCommAndroid', ':JMPDCommJava'
+include "MPDroid", ':JMPDCommAndroid', ':JMPDCommJava', ':drag-sort-listview'
 
 project(':JMPDCommAndroid').projectDir = new File('JMPDComm/backends/android')
 project(':JMPDCommJava').projectDir = new File('JMPDComm/backends/java')
+project(':drag-sort-listview').projectDir = new File('drag-sort-listview')

@@ -151,8 +151,7 @@ dependencies {
     compile 'com.android.support:design:26.1.0'
     // Projects
     compile project(':JMPDCommAndroid')
-    // Libraries from maven
-    compile 'asia.ivity.android:drag-sort-listview:1.0'
+    compile project(':drag-sort-listview')
 }
 
 class BrowseJavadoc implements TaskExecutionListener {
